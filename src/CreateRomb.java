@@ -4,13 +4,13 @@ public class CreateRomb {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Wprowadź liczbę, stanowiącą bok rombu: ");
-        int sideRomb = scanner.nextInt();
+        int diamondSide = scanner.nextInt();
 
-        for (int i = 1; i <= sideRomb; i++) {
-            for (int j = 1; j <= sideRomb - i; j++) {
+        for (int i = 1; i <= diamondSide; i++) {
+            for (int j = 1; j <= diamondSide - i; j++) {
                 System.out.print(" ");
             }
-            for (int j = 1; j <= sideRomb; j++) {
+            for (int j = 1; j <= diamondSide; j++) {
                 System.out.print("*");
             }
             System.out.println();
